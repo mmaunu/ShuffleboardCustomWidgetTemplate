@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import team2485.util.ResizableCanvas?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="team2485.widgets.TestWidget"
+          fx:id="zPaneZPane"
+          prefHeight="400.0" prefWidth="400.0">
+
+    <Button fx:id="clicky" text="Clicketh Mine Button" GridPane.columnIndex="0"
+            GridPane.rowIndex="0" GridPane.columnSpan="2" onAction="#rotate"/>
+
+    <StackPane GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+               GridPane.columnSpan="2" fx:id="imgParentPane">
+        <ResizableCanvas fx:id="canvas"/>
+    </StackPane>
+
+    <Label fx:id="numberLabel" text="Value:" GridPane.columnIndex="0" GridPane.rowIndex="2" minWidth="40" GridPane.hgrow="NEVER"/>
+    <TextField fx:id="numberField" text="N/A" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.hgrow="ALWAYS"/>
+
+</GridPane>

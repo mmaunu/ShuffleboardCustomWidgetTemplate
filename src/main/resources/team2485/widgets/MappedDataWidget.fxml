@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import team2485.util.ResizableCanvas?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="team2485.widgets.MappedDataWidget"
+          fx:id="thePane"
+          prefHeight="400.0" prefWidth="400.0">
+
+    <StackPane GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS"
+               GridPane.columnSpan="2" fx:id="imgParentPane">
+        <ResizableCanvas fx:id="canvas"/>
+    </StackPane>
+
+    <Label fx:id="number1Label" text="Value 1:" GridPane.columnIndex="0" GridPane.rowIndex="2" minWidth="40" GridPane.hgrow="NEVER"/>
+    <TextField fx:id="number1Field" text="N/A" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.hgrow="ALWAYS"/>
+
+    <Label fx:id="number2Label" text="Value 2:" GridPane.columnIndex="0" GridPane.rowIndex="3" minWidth="40" GridPane.hgrow="NEVER"/>
+    <TextField fx:id="number2Field" text="N/A" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.hgrow="ALWAYS"/>
+
+</GridPane>
